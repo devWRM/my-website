@@ -78,9 +78,20 @@ table {
 }
 
 
-/* .my-photo {
-    background-image: url("");
-} */
+.my-photo {
+    background-size: cover;
+    float: left;
+    margin-right: 25px;
+}
+
+
+.intro-text {
+    width: 600;
+    /* height: 450; */
+    margin-top: 25%;
+    background-color: rgb(149, 231, 231);
+    color: rgb(83, 83, 3);
+}
 
 
 
