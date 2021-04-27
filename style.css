@@ -86,14 +86,37 @@ table {
 
 
 .intro-text {
-    width: 600;
+    width: 600px;
     /* height: 450; */
-    margin-top: 25%;
+    margin-top: 10%;
     background-color: rgb(149, 231, 231);
     color: rgb(83, 83, 3);
+    padding: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    /* opacity: .5; */
+    /* border-radius: 20px; */
 }
 
 
+.intro-text h1 {
+    font-size: 30px;
+    padding: 5%;
+    text-align: left;
+
+}
+
+
+.intro-text h4 {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+}
+
+
+.intro-text a {
+    font-size: 20px;
+    font-weight: bold;
+}
 
 
 
