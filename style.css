@@ -48,8 +48,13 @@ table {
 }
 
 
+/*///////     MEYER's END: Removes default styling     ///////*/
 
-/*///////////////     MEYER's END     ///////////////*/
+body {
+    font-family: sans-serif;
+    font-weight: lighter;
+    /* box-sizing: border-box; */
+}
 
 
 .banner {
@@ -58,30 +63,35 @@ table {
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
-    height: 600px;
+    height: 500px;
+    /* height: 100vh; */
     position: absolute;
-    z-index: 1;
+    z-index: 1;         /* order divs appear */
 }
 
 
 .main-section {
     padding-top: 10%;
+    padding-bottom: 10%;
     position: relative;
     z-index: 2;
 }
 
 
-.section-2 {
+.subsection-1 {
     display: inline-block;
     margin-left: 15%;
-    padding-top: 5%;
+    /* padding-top: 5%; */
 }
 
 
 .my-photo {
-    background-size: cover;
+    padding-left: 10px;
+    padding-right: 10px;
     float: left;
-    margin-right: 25px;
+    /* background-size: cover;
+    float: left;
+    margin-right: 25px; */
 }
 
 
@@ -89,10 +99,12 @@ table {
     width: 600px;
     /* height: 450; */
     margin-top: 10%;
-    background-color: rgb(149, 231, 231);
+    background-color: rgb(149, 231, 231, .7);
+    border-radius: 7px;
     color: rgb(83, 83, 3);
     padding: 25px;
     font-family:Arial, Helvetica, sans-serif;
+    
     /* opacity: .5; */
     /* border-radius: 20px; */
 }
@@ -100,15 +112,16 @@ table {
 
 .intro-text h1 {
     font-size: 30px;
-    padding: 5%;
-    text-align: left;
+    /* padding-top: 200px; */
+    text-align: right;
+    padding-bottom: 20px;
     
 }
 
 
 .intro-text h4 {
     font-size: 20px;
-    line-height: 25px;
+    line-height: 40px;
     text-align: left;
 }
 
@@ -127,6 +140,101 @@ table {
     color: rgb(89, 89, 190);
     font-weight: bolder;
     text-decoration: underline;
+    transition: .05s;
+    cursor: pointer;
 }
 
 
+.subsection-2 {
+    display: inline-block;
+    padding-top: 10%;
+    color: rgb(83, 83, 3);
+    margin-left: 15%;
+    width: 100%;
+}
+
+.subsection-2 h2 {
+    font-size: 50px;
+    text-align: left;
+}
+
+
+.portfolio-list {
+    width: 50%;
+    /* float: left; */
+}
+
+.portfolio-list ul {
+    width: 600px;
+    margin-top: 30px;
+    margin-left: 20px;
+    float: left;
+}
+
+.portfolio-list li {
+    margin-bottom: 15px;
+}
+
+
+.portfolio-list a {
+    font-size: 20px;
+    color: white;
+    /* font-weight: bold; */
+    padding: 5px;
+    line-height: 45px;
+    text-decoration: none;
+    background-color: rgb(149, 231, 231, .9);
+}
+
+
+.portfolio-list a:hover {
+    /* font-size: 25px; */
+    /* color: rgb(89, 89, 190); */
+    background-color: rgba(98, 153, 153, 0.9);
+    padding: 5px;
+    /* border-radius: 7px; */
+    /* font-weight: bolder; */
+    /* font-size: 20px; */
+    /* text-decoration: underline; */
+    transition: .05s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.footer {
+    background-image: url("https://images.pexels.com/photos/5052880/pexels-photo-5052880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    /* height: 100vh; */
+    position: absolute;
+    /* z-index: 1;    */
+}
+
+
+
+
+
+
+/* 
+.footer {
+    margin-top: 150px;
+    background-image: url(pexels-cottonbro-5052880.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+    width: 100%;
+
+} */
+
+.footer p {
+    padding: 20px 0 20px 100px;
+    color: white;
+    background-color: rgb(83, 83, 3)
+}
